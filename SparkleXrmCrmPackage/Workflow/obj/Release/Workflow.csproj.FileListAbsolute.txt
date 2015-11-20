@@ -1,0 +1,12 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\SparkleXrm.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\SparkleXrm.Workflow.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Crm.Sdk.Proxy.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.IdentityModel.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Xrm.Sdk.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Xrm.Sdk.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Crm.Sdk.Proxy.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Xrm.Sdk.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Release\Microsoft.Xrm.Sdk.Workflow.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\obj\Release\Workflow.csprojResolveAssemblyReference.cache
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\obj\Release\SparkleXrm.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\obj\Release\SparkleXrm.Workflow.pdb

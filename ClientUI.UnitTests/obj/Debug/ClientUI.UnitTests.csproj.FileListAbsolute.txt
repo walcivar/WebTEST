@@ -1,0 +1,1 @@
+D:\ConnectionUIForm2\ClientUI.UnitTests\obj\Debug\ClientUI.UnitTests.csprojResolveAssemblyReference.cache

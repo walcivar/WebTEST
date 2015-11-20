@@ -1,0 +1,11 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\SparkleXrm.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\SparkleXrm.Workflow.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.IdentityModel.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Xrm.Sdk.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\bin\Debug\Microsoft.Xrm.Sdk.Workflow.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\obj\Debug\SparkleXrm.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Workflow\obj\Debug\SparkleXrm.Workflow.pdb

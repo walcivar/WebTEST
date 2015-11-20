@@ -1,0 +1,10 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\SparkleXrm.Plugins.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\SparkleXrm.Plugins.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\Microsoft.Crm.Sdk.Proxy.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\Microsoft.IdentityModel.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\Microsoft.Xrm.Sdk.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\Microsoft.Crm.Sdk.Proxy.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Release\Microsoft.Xrm.Sdk.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\obj\Release\Plugins.csprojResolveAssemblyReference.cache
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\obj\Release\SparkleXrm.Plugins.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\obj\Release\SparkleXrm.Plugins.pdb

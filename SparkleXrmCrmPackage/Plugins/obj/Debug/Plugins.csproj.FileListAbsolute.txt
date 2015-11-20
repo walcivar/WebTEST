@@ -1,0 +1,9 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\SparkleXrm.Plugins.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\SparkleXrm.Plugins.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\Microsoft.IdentityModel.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\Microsoft.Crm.Sdk.Proxy.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\obj\Debug\SparkleXrm.Plugins.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\Plugins\obj\Debug\SparkleXrm.Plugins.pdb

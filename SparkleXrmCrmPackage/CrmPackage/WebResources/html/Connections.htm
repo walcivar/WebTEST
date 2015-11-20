@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Connections</title>
+
+    <!-- CRM2013/2015 Styles -->
+    <link href="../../sparkle_/css/2013/sparkle_jquery_ui.css" rel="stylesheet" />
+    <link href="../../sparkle_/css/2013/sparkle.css" rel="stylesheet" />
+    
+    <style>
+        #container {
+            padding-top: 0px;
+            padding-left: 0px;
+            padding-right: 2px;
+            padding-bottom: 2px;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 300px;
+        }
+
+
+        #contactsEditorGrid {
+            margin-top: 30px;
+        }
+
+        .gridtoolbar-button.addnew16 {
+            font-size: 12px !important;
+            width: 16px;
+            height: 30px;
+            background: center center transparent no-repeat url("https://i-technet.sec.s-msft.com/dynimg/IC799385.png")
+        }
+
+        .gridtoolbar-button.opensubgrid16 {
+            font-size: 12px !important;
+            width: 16px;
+            height: 30px;
+            background: center center transparent no-repeat url("https://mspartner.microsoft.com/en/SiteCollectionImages/rwd/video/list-view.png")
+        }
+
+        .gridtoolbar-button.delete16 {
+            font-size: 12px !important;
+            width: 16px;
+            height: 30px;
+            background: center center transparent no-repeat url("https://www.microsoft.com/en-us/dynamics/social-engagement-help-and-training/nb_ua_r1_trashbin.png")
+        }
+
+        .gridtoolbar-button.delete16.inline {
+            background-color: #d7ebf9 !important;
+        }
+
+        .gridtoolbar-button.delete16.inline:hover{
+            background-color: rgb(177,214,240) !important;
+        }
+
+        .gridButtonsOverlay{
+            table-layout:fixed;
+            height:30px;
+            width:50px;
+            position:absolute;
+            z-index:20;
+            display:none;
+        }
+
+        .toolbar-buttons {
+            position:absolute;
+            right: 0px;
+            top:0px;
+            height: 30px;
+        }
+
+        .subgrid-label {
+            position:absolute;
+            left:0px;
+            top:0px;
+            font-weight:bold;
+            font-size:12px;
+        }
+
+        .sparkle-FormSection {
+            padding-right:30px;
+        }
+
+        .informationMessage {
+            background-color: #FFF190;
+            border: 1px solid #000000;
+            padding-top:5px;
+            padding-left:5px;
+        }
+
+        .informationMessage a {
+            text-decoration:underline;
+            color:black;
+        }
+
+        .errorMessage {
+            padding:3px;
+            background-color:#FFBABD;
+            border: 1px solid #FF2122
+        }
+
+    </style>
+
+</head>
+<body class="sparkle-xrm">
+
+    <div class="subgrid-label">CONNECTIONS</div>
+    <div class="toolbar-buttons">
+        <button type="button" class="gridtoolbar-button delete16" id="Delete" data-bind="visible: $root.AllowAddNew, click: $root.DeleteSelectedCommand"></button>
+        <button type="button" class="gridtoolbar-button addnew16" id="AddNew" data-bind="visible: $root.AllowAddNew, click: $root.AddNewCommand"></button>            
+        <button type="button" class="gridtoolbar-button opensubgrid16" id="openAssociatedSubGrid" data-bind="click: $root.OpenAssociatedSubGridCommand"></button>
+    </div>
+
+    <div id="ContactsEditorGrid">
+        <div class="errorMessage" style="display:none;" data-bind="visible: ErrorMessage() != null">
+            <img class="sparkle-imagestrip-inlineedit_warning" alt="Error" src="../../sparkle_/css/images/trasparent_spacer.gif">
+            <span class="sparkle-control-validation-text" data-bind="text: ErrorMessage()"></span>
+        </div>
+    </div>
+
+    <!--ko template: { name: 'xrmPleaseWaitBlock', data: {isBusy : isBusy, isBusyProgress : isBusyProgress, isBusyMessage : isBusyMessage}} --><!--/ko-->    
+    <!-- Contact Editor Form-->
+    <div style="display:block" data-bind='validationOptions: { messageTemplate: "xrmControlValidationMessage" }, fadeVisible: ConnectionEdit().AddNewVisible' >
+        <div data-bind="width:ConnectionEdit">
+            <div data-bind="template: { name: 'sparkle-form-tab-header', data: { title: 'Connection' } }"></div>        
+            <table class="sparkle-FormSection" columns="2" label="General" style="table-layout: fixed;" height="1%" valign="top" cellspacing="0" cellpadding="3">
+                <colgroup>
+                    <col width="130">
+                    <col>
+                    <col width="130">
+                    <col>
+                </colgroup>
+                <tbody>                     
+                    <tr valign="top">
+                        <!--ko template: { 
+                            name: 'sparkle-form-field', 
+                            data: {
+                                label: 'Connect to',
+                                field: record1id,
+                                required: 0,
+                                type: 'lookup',
+                                disable: false,
+                                visible: true,
+                                queryCommand: RecordSearchCommand,
+                                typeCodeAttribute: '',
+                                idAttribute: 'id',
+                                nameAttribute: 'name'} }-->
+                        <!--/ko-->
+                    </tr>
+                    <tr valign="top">
+                        <!--ko template: { 
+                            name: 'sparkle-form-field', 
+                            data: {
+                                label: 'Role',
+                                field: 'record1roleid',
+                                required: 0,
+                                type: 'lookup',
+                                disable: false,
+                                visible: true,
+                                queryCommand: 'RoleSearchCommand',
+                                typeCodeAttribute: '',
+                                idAttribute: 'id',
+                                nameAttribute: 'name'} }-->
+                        <!--/ko-->
+                    </tr>
+                </tbody>
+            </table>
+            <button class="dialogButton" data-bind="click: 'SaveCommand'">Save</button>  
+        </div>  
+        <div id="container"></div>  
+        <div id="pager"></div>               
+    </div>
+
+
+    <!-- Start of Scripts-->
+    <script src="../../ClientGlobalContext.js.aspx" type="text/javascript"></script>
+    
+    <!-- Sparkle Xrm dependancies -->
+    <script src="../../sparkle_/js/SparkleXrmUI_Dependancies.js"></script>
+    
+    <!-- Sparkle Xrm -->
+    <script src="../../sparkle_/js/mscorlib.js" type="text/javascript"></script>
+    <script src="../../sparkle_/js/SparkleXrm.js" type="text/javascript"></script>
+    <script src="../../sparkle_/js/SparkleXrmUI.js" type="text/javascript"></script>
+
+    <!-- Client Code -->
+    <script src="../js/ClientUI.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        ClientUI.View.ConnectionsView.Init();
+
+    </script>
+</body>
+</html>

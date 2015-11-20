@@ -1,0 +1,4 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\WebResources\js\ClientHooks.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\WebResources\js\ClientHooks.pdb
+D:\ConnectionUIForm2\ClientHooks\obj\Debug\ClientHooks.dll
+D:\ConnectionUIForm2\ClientHooks\obj\Debug\ClientHooks.pdb

@@ -1,0 +1,7 @@
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\SparkleXrm.Plugins.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\SparkleXrm.Workflow.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\Microsoft.Xrm.Sdk.dll
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\SparkleXrm.Plugins.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\SparkleXrm.Workflow.pdb
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\bin\Debug\Microsoft.Xrm.Sdk.xml
+D:\ConnectionUIForm2\SparkleXrmCrmPackage\CrmPackage\obj\Debug\CrmPackage.csprojResolveAssemblyReference.cache
